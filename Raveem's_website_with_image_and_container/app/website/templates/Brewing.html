@@ -1,0 +1,85 @@
+{% extends "base.html" %} {% block title %} Coffee {% endblock %} {% block
+content %}
+<style>
+    input:hover{
+        color:#700000;
+        background:rgb(139, 125, 125) ;
+    }
+    input{
+        height: 80px;
+        width: 300px;
+    }
+    #link{
+        font-size: larger;
+        float: right;
+    }
+    #line{
+        font-size: larger;
+        float: right;
+    }
+    #lins{
+        font-size: larger;
+        float: right;
+    }
+    .cont{
+      position: relative;
+      margin: 1 80px;
+      width: 1180px;
+      top: 250px;
+      background:#ddd;
+      height: 1900px;
+    } 
+</style>
+<div class="cont">
+    <h1 align="center" id="brew"><font color='blue'><b> Brewing</b></font></h1>
+    <br />
+    <div class='content'>
+    <center><img src="https://cdn5.vectorstock.com/i/1000x1000/78/24/8-coffee-brewing-methods-icons-set-different-ways-vector-5457824.jpg" alt=""></center>
+    <br />    
+        <p>
+            <h2>
+                Coffee is made into a drink by putting the coffee into boiling water. 
+                This is called "brewing" coffee. There are many ways to brew coffee. 
+                Four of the most popular are:<br />
+
+                * Boiling: The coffee and the water are put into a pot on top of the stove and boiled slowly together.<br />
+                This way of making coffee has been used for hundreds of years. <br />
+                It is the way that coffee is usually made in the Middle East, North Africa, Turkey and Greece.[4]<br />
+
+                * Pressure: The boiling water is forced through the ground coffee by a machine.<br />
+                This type of coffee is called Espresso and the machine is called an "Espresso machine" or "Coffee system".<br />
+                Espresso machines are often found in cafes and restaurants. Espresso is a very <br />
+                strong coffee that can be used to make other coffee drinks.[5]<br />
+
+                * Gravity: Filtered coffee is made by gravity because the boiling water falls from a machine onto the coffee.<br />
+                The coffee grounds are held in a paper or metal "filter" that the water can run through, but the little coffee pieces cannot.<br />
+                The water becomes coloured and flavoured as it runs through the coffee and into a coffee pot.[6]<br />
+
+                * Steeping: Boiling water is poured onto the coffee and it is allowed to stand for a little while, until the water has taken the colour and flavour.<br /> 
+                This is often done in a cafetière, which is a tall glass or coffee pot which has a special filter inside that can be <br />
+                pushed down when the coffee is ready so that the person does not drink the coffee grounds. <br />
+                Another way of steeping coffee is to have coffee grounds in a small packet, the right size to make one cup of coffee.<br /> 
+                The packet is placed in the cup and water poured over it. Then the packet is removed.[7]<br />
+            </h2>
+            </p>
+    </div>
+    <br />
+    <form action="/seeds">
+        <h1><input type="submit" id='link' value=' Beans'></h1>   
+    </form>
+    <form action='/type'>
+        <h1><input type='submit' id ='line' value='coffee types'></h1>
+    </form>
+    <form action='/Rosting'>
+        <h1><input type='submit' id ='line' value='Roasting'></h1>
+    </form>
+    <center>
+        <form action='/Grinding'>
+            <h1><input type='submit' id ='lins' value='Grinding'></h1>
+        </form>
+        <form action='/home'>
+            <h1><input type='submit' id ='lins' value='All about coffee'></h1>
+        </form>
+    </center>
+</div>
+{% endblock %}

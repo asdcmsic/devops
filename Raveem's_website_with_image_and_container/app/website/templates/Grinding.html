@@ -1,0 +1,69 @@
+{% extends "base.html" %} {% block title %} Coffee {% endblock %} {% block
+content %}
+<style>
+    input:hover{
+        color:#700000;
+        background:rgb(139, 125, 125) ;
+    }
+    input{
+        height: 80px;
+        width: 300px;
+    }
+    #link{
+        font-size: larger;
+        float: right;
+    }
+    #line{
+        font-size: larger;
+        float: right;
+    }
+    #lins{
+        font-size: larger;
+        float: right;
+    }
+    .cont{
+      position: relative;
+      margin: 1 80px;
+      width: 1180px;
+      top: 250px;
+      background:#ddd;
+      height: 900px;
+    } 
+</style>
+<div class="cont">
+    <h1 align='center'><font color='blue'><b> Coffee-Grinding </b></font></h1>
+    <br />
+    <center><img src="https://knowyourgrinder.com/wp-content/uploads/2016/03/41CB8j3Y96L.jpg" alt=""></center>
+    <p>
+        <h2>
+            Grinding
+                Before the coffee is made into a drink, 
+                it is "ground" in a small grinding machine called a "coffee mill". 
+                The coffee mill breaks the beans into very small pieces.
+                Coffee is turned into a drink in several different ways. 
+                For some ways of making coffee, such as "espresso" it is best to have the 
+                coffee ground into fine powder but for other types of coffee-making, such as "filtered coffee", 
+                the coffee is in larger pieces to stop it going through the filter. 
+                Finely ground coffee makes a stronger taste.
+        </h2>
+    </p>
+    <br />
+    <form action="/seeds">
+        <h1><input type="submit" id='link' value=' Beans'></h1>   
+    </form>
+    <form action='/type'>
+        <h1><input type='submit' id ='line' value='coffee types'></h1>
+    </form>
+    <form action='/Rosting'>
+        <h1><input type='submit' id ='line' value='Roasting'></h1>
+    </form>
+    <center>
+        <form action='/Brewing'>
+            <h1><input type='submit' id ='lins' value='Brewing'></h1>
+        </form>
+        <form action='/home'>
+            <h1><input type='submit' id ='lins' value='All about coffee'></h1>
+        </form>
+    </center>
+</div>
+{% endblock %}

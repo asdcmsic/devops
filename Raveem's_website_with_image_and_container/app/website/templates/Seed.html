@@ -1,0 +1,81 @@
+{% extends "base.html" %} {% block title %} Coffee {% endblock %} {% block
+content %}
+<style>
+    input:hover{
+        color:#700000;
+        background:rgb(139, 125, 125) ;
+    }
+    input{
+        height: 80px;
+        width: 300px;
+    }
+    #link{
+        font-size: larger;
+        float: right;
+    }
+    #line{
+        font-size: larger;
+        float: right;
+    }
+    #lins{
+        font-size: larger;
+        float: right;
+    }
+    .cont{
+      position: relative;
+      margin: 1 80px;
+      width: 1180px;
+      top: 250px;
+      background:#ddd;
+      height: 1140px;
+    } 
+</style>
+<div class="cont">
+    <h1 align='center'><font color='blue'><b> Coffee-beans </b></font></h1>
+    <br />
+    <center><img src="https://thumbs.dreamstime.com/b/roasted-coffee-seeds-23309881.jpg" alt=""></center>
+    <p>
+        <h2>
+            A coffee bean is a seed
+                of the Coffea plant
+                and the source for coffee. It is the pit inside the red 
+                or purple fruit often referred to as a cherry. Just like ordinary cherries, 
+                the coffee fruit is also a so-called stone fruit. Even though the coffee beans 
+                are not technically beans, they are referred to as such because of their resemblance 
+                to true beans. The fruits; cherries or berries, most commonly contain two stones with 
+                their flat sides together. A small percentage of cherries contain a single 
+                seed, instead of the usual two. This is called a "peaberry". 
+                The peaberry occurs only between 10% and 15% of the time, and it is 
+                a fairly common (yet scientifically unproven) belief that they have more 
+                flavour than normal coffee beans.[3] Like Brazil nuts 
+                (a seed) and white rice, coffee beans consist mostly of endosperm.[4]
+                The two most economically important varieties of coffee plant are the 
+                Arabica and the Robusta; ~60% of the coffee produced worldwide is 
+                Arabica and ~40% is Robusta.[5] Arabica beans consist of 0.8–1.4% caffeine and 
+                Robusta beans consist of 1.7–4.0% caffeine.[6] As coffee is one of the
+                world's most widely consumed beverages, coffee beans are a major cash
+                crop and an important export product, accounting for over 50% of some 
+                developing nations' foreign exchange earnings.[7] In 2017, 70% of total 
+                coffee production was exported, worth USD 19.9 billion.[8]
+        </h2>
+    </p>
+    <br />
+    <form action="/Brewing">
+        <h1><input type="submit" id='link' value='Brewing'></h1>   
+    </form>
+    <form action='/type'>
+        <h1><input type='submit' id ='line' value='coffee types'></h1>
+    </form>
+    <form action='/Rosting'>
+        <h1><input type='submit' id ='line' value='Roasting'></h1>
+    </form>
+    <center>
+        <form action='/Grinding'>
+            <h1><input type='submit' id ='lins' value='Grinding'></h1>
+        </form>
+        <form action='/home'>
+            <h1><input type='submit' id ='lins' value='All about coffee'></h1>
+        </form>
+    </center>
+</div>
+{% endblock %}
