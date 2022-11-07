@@ -29,6 +29,7 @@ then
 echo "$s is an Amstrong number"
 else
 echo "$s is Not an Armstrong number"
+echo "because  the totals of  the original number when each of the digits is raised to the power of the number of digits in the number "
 fi
 }
 result=`ams $n`
