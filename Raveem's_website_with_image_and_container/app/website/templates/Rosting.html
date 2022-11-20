@@ -1,0 +1,71 @@
+{% extends "base.html" %} {% block title %} Coffee {% endblock %} {% block
+content %}
+<style>
+    input:hover{
+        color:#700000;
+        background:rgb(139, 125, 125) ;
+    }
+    input{
+        height: 80px;
+        width: 300px;
+    }
+    #link{
+        font-size: larger;
+        float: right;
+    }
+    #line{
+        font-size: larger;
+        float: right;
+    }
+    #lins{
+        font-size: larger;
+        float: right;
+    }
+    .cont{
+      position: relative;
+      margin: 1 80px;
+      width: 1180px;
+      top: 250px;
+      background:#ddd;
+      height: 1100px;
+    } 
+</style>
+<div class="cont">
+    <h1 align='center'><font color='blue'><b> Coffee-Roasting </b></font></h1>
+    <br />
+    <center><img src="https://www.perfectdailygrind.com/wp-content/uploads/2019/03/roasted-beans-1024x683.jpg" alt=""></center>
+    <p>
+
+        <h2>
+            Roasting
+                "Roasting" is one of the important stages in 
+                making coffee beans into coffee. When a coffee bean is roasted, 
+                it grows nearly two times bigger and changes from green to yellow to brown.
+                The length of time that the coffee beans are roasted makes the coffee taste 
+                different. Some types of coffee, such as Mocha and Java, are roasted for a short time. 
+                It is easy to tell from the flavour where the coffee is from. When coffee is roasted for a long time, 
+                it is harder to tell the different types apart. Green coffee beans can be bought and roasted at home in 
+                the oven.
+        </h2>
+
+    </p>
+    <br />
+    <form action="/seeds">
+        <h1><input type="submit" id='link' value=' Beans'></h1>   
+    </form>
+    <form action='/type'>
+        <h1><input type='submit' id ='line' value='coffee types'></h1>
+    </form>
+    <form action='/Brewing'>
+        <h1><input type='submit' id ='line' value='Brewing'></h1>
+    </form>
+    <center>
+        <form action='/Grinding'>
+            <h1><input type='submit' id ='lins' value='Grinding'></h1>
+        </form>
+        <form action='/home'>
+            <h1><input type='submit' id ='lins' value='All about coffee'></h1>
+        </form>
+    </center>
+</div>
+{% endblock %}

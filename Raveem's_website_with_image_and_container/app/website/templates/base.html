@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .nav{
+      width: 1170px;
+      margin: 0 auto;
+    }
+    header{
+      height: 80px;
+      background: linear-gradient(141deg,#473f3f 0px, #705959 59px, #290000 75px);
+      width: 1400px;
+      position: fixed;
+    }
+    .logo a{
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      float: left;
+      line-height: 80px;
+    }
+    .logo{
+      float: left;
+      line-height: 90px;
+    }
+    nav{
+      float: right;
+      line-height: 80px;
+    }
+    nav a{
+      text-decoration: none;
+      font-family: poppins;
+      float: right;
+      letter-spacing: 4px;
+      font-size: 20px;
+      margin: 0 10px;
+      color: #fff;
+      display: block;
+    }
+    nav :hover{
+      color:#ff0404;
+      background:rgb(68, 0, 0) ;
+    }
+    .con{
+      width: 1400px;
+      height: 700px;
+      position: fixed;
+      top: 80px;
+      background-image: url("https://wallsdesk.com/wp-content/uploads/2016/10/Coffee-High-Definition-Wallpapers.jpg");
+      -webkit-background-size: cover;
+      background-size:cover;
+      background-position: center center;
+    }
+    .con h2{
+      text-align: center;
+      font-size: 70px;
+      font-family: poppins;
+      text-transform:uppercase;
+      color:rgb(255, 0, 0);
+    } 
+  </style>
+  <head>
+    <!-- <link rel="stylesheet" type='text/css' href="style.css"> -->
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Coffee_cup_icon.svg/1200px-Coffee_cup_icon.svg.png">
+    <title>{% block title %}Coffee{% endblock %}</title>
+    
+  </head>
+  <body>
+    <header>
+      <div class='nav'>
+        <div class='logo'>
+          <a class="nav-item nav-link" id="home"><b><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Coffee_cup_icon.svg/1200px-Coffee_cup_icon.svg.png" alt="a coup of " width="59"hight="59"></b></a>
+          <a href="/">Coffee</a>
+        </div>
+        <nav>
+          <a href="/Brewing">Brewing</a>
+          <a href="/Grinding">Grinding</a>
+          <a href="/type">coffeetypes</a>
+          <a href="/Rosting">Roasting</a>
+          <a href="/seeds">beans  </a>
+          <a href="/home">Home  </a>
+        </nav>
+      </div>
+    </header>
+    <div class='con'>
+      <h2>Welcome to A cup of Coffee</h2>
+    </div>
+    <div class="container">
+      <div class='nav'>
+        {% block content %} {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
